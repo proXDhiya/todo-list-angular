@@ -1,0 +1,93 @@
+.todos {
+  width: 50%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.todo-input {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: auto;
+  border: 1px solid #748af8;
+  margin-bottom: 30px;
+}
+
+.todo-input > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #d3def1;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding-left: 50px;
+}
+
+.todo-input > input:focus {
+  outline: none;
+}
+
+.todo-input > button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #748af8;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  height: 50px;
+  background-color: #f8dcd1;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.todo-done {
+  background-color: #d6f8d1;
+}
+
+.todo-done > p {
+  text-decoration: line-through;
+}
+
+.todo-done > button {
+  background-color: #4e5050 !important;
+}
+
+.todo > p {
+  align-self: center;
+  margin-left: 30px
+}
+
+.todo > p:first-child {
+  justify-self: center;
+  margin: 0;
+}
+
+
+.todo > button {
+  background-color: #1cade7;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.todo > button:hover {
+  background-color: #748af8;
+}

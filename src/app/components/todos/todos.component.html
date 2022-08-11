@@ -1,0 +1,11 @@
+<div class="todos">
+  <div class="todo-input">
+    <input type="text" [(ngModel)]="tempName" placeholder="Add new Todo">
+    <button (click)="onCreateNewTodo()">Add</button>
+  </div>
+  <div *ngFor="let todo of todoList; let i = index" class="todo {{ (todo.completed ? 'todo-done' : '') }}">
+    <p class="todo_id"> {{ i+1 }} </p>
+    <p class="todo_name"> {{ todo.content }} </p>
+    <button (click)="onToggle(i)" class="todo_done"> {{ todo.completed ? 'Undone' : 'Done' }} </button>
+  </div>
+</div>

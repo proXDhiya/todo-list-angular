@@ -4,16 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './todo/todo.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TodoComponent
-  ],
+  declarations: [AppComponent, TodosComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
